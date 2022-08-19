@@ -37,6 +37,8 @@ This Arduino library allows you to use Deneyap Keypad with I2C peripheral. You c
 ## Version History
 1.0.0 - initial release
 
+1.0.1 - update library, add sketch
+
 ## :rocket:Hardware Connections
 - Deneyap Keypad and Board can be connected with I2C cable
 - or 3V3, GND, SDA and SCL pins can be connected with jumper cables

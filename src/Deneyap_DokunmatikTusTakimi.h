@@ -2,8 +2,8 @@
 *****************************************************************************
 @file         Deneyap_DokunmatikTusTakimi.h
 @mainpage     Deneyap Keypad Arduino library header file
-@version      v1.0.0
-@date         June 23, 2022
+@version      v1.0.1
+@date         August 19, 2022
 @brief        This file contains all function prototypes and macros
               for Deneyap Keypad Arduino library
 *****************************************************************************
@@ -14,17 +14,17 @@
 
 #include <Wire.h>
 #include <Arduino.h>
-#include <deneyap.h>
+//#include <deneyap.h>
 
+/*
 #define I2C_SLV_ADDR_DEFAULT    (uint8_t)0x0E 
 #define I2C_SLV_ADDR_ALT1       (uint8_t)0x4C
 #define I2C_SLV_ADDR_ALT2       (uint8_t)(I2C_SLV_ADDR_DEFAULT + 2)
 #define I2C_SLV_ADDR_ALT3       (uint8_t)(I2C_SLV_ADDR_DEFAULT + 3)
+*/
 
 #define DATA_BUFFER_SIZE        2     // in Byte (max data size)
 
-#define SDA_PIN                 4
-#define SCL_PIN                 15
 
 typedef struct                        // Data packet (protocol) created by master
 {																			// for I2C data exchange process 
@@ -44,7 +44,7 @@ class Keypad
 { 
   public:
     /* Check device status */
-    bool begin(uint8_t address = I2C_SLV_ADDR_DEFAULT, TwoWire &port = Wire); 
+    bool begin(uint8_t address , TwoWire &port = Wire); 
     bool isConnected();                                                       
     uint16_t getFwVersion();                                                  
     bool setI2Caddress(uint8_t newAddress);                                      

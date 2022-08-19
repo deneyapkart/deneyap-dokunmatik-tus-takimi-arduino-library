@@ -21,7 +21,7 @@ Deneyap Dokunmatik Tuş Takımı için Arduino kütüphanesidir.
 ## :closed_book:Dokümanlar
 Deneyap Dokunmatik Tuş Takımı
 
-[Arduino Kütüphanesi Nasıl İndirilir](https://docs.arduino.cc/software/ide-v1/tutorials/installing-libraries)
+[Arduino IDE'de Kütüphane Nasıl İndirilir](https://docs.arduino.cc/software/ide-v1/tutorials/installing-libraries)
 
 ## :pushpin:Deneyap Dokunmatik Tuş Takımı
 Bu Arduino kütüphanesi Deneyap Dokunmatik Tuş Takımının I2C çevre birimi ile kullanılmasını sağlar. Arduino ile uyumlu, I2C çevre birimine sahip herhangi bir geliştirme kartı ile bu kütüphaneyi projelerinizde kullanabilirsiniz.
@@ -36,9 +36,11 @@ Bu Arduino kütüphanesi Deneyap Dokunmatik Tuş Takımının I2C çevre birimi 
 ## Sürüm Geçmişi
 1.0.0 - ilk sürüm
 
+1.0.1 - kütüphane güncellendi, örnek uygulama eklendi
+
 ## :rocket:Donanım Bağlantıları
 - Deneyap Dokunmatik Tuş Takımı ile kullanılan geliştirme kartı I2C kablosu ile bağlanabilir
-- veya jumper kablolar ile ile 3V3, GND, SDA ve SCL bağlantıları yapılabilir. 
+- veya jumper kablolar ile 3V3, GND, SDA ve SCL bağlantıları yapılabilir. 
 
 | Dokunmatik Tuş Takımı | Fonksiyon| Kart pinleri |
 | :---     | :---   |   :---  |

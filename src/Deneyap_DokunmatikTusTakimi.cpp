@@ -3,8 +3,8 @@
 @file         Deneyap_DokunmatikTusTakimi.cpp
 @mainpage     Deneyap Keypad Arduino library source file
 @maintainer   RFtek Electronics <techsupport@rftek.com.tr>
-@version      v1.0.0
-@date         June 23, 2022
+@version      v1.0.1
+@date         August 19, 2022
 @brief        Includes functions to control Deneyap Keypad 
               Arduino library
 
@@ -26,7 +26,7 @@ Library includes:
 */
 bool Keypad::begin(uint8_t address, TwoWire &port)
 {
-   Wire.begin(SDA_PIN,SCL_PIN);
+   Wire.begin();
   _i2cAddress = address;
   _i2cPort = &port;
   _dataPacket = {0};
@@ -96,6 +96,7 @@ uint8_t Keypad::KeypadRead(void)
 {
   _dataPacket.command = (uint8_t)KEYPAD_READ;
   _dataPacket.dataSize = 0x00;
+  delay(250);
   return I2C_ReadData8bit(&_dataPacket);
 }
 
