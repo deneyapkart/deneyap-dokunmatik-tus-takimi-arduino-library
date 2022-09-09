@@ -9,12 +9,11 @@
  *   Bu algılayıcı I2C haberleşme protokolü ile çalışmaktadır.
  *
  *   Bu örnek Deneyap Dokunmatik Tuş Takımı için oluşturulmuştur
- *      ------>  www.....com  <------ //docs
- *      ------>  https://github.com/deneyapkart/deneyap-dokunmatik-tus-takimi-arduino-library  <------
- *
- */
+ *      ------>  https://docs.deneyapkart.org/tr/content/contentDetail/deneyap-module-deneyap-soil-moisture-m38  <------
+ *      ------>  https://github.com/deneyapkart/deneyap-dokunmatik-tus-takimi-arduino-library  <------ 
+*/
 
-#include <Deneyap_DokunmatikTusTakimi.h>            // Deneyap_DokunmatikTusTakimi kütüphanesi eklenmesi
+#include <Deneyap_DokunmatikTusTakimi.h>            // Deneyap Dokunmatik Tuş Takımı kütüphanesi eklenmesi
 
 Keypad TusTakimi;                                   // Keypad için class tanımlanması
 
